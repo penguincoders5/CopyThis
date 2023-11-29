@@ -1,0 +1,60 @@
+
+import turtle
+
+# Fullscreen the canvas
+screen = turtle.Screen()
+screen.setup(1.0, 1.0)
+
+# Begin!
+t = turtle.Turtle()
+
+t.shape('turtle')
+t.color('aquamarine', 'pink')
+# t.pensize(10)
+# t.forward(100)
+
+def oval(color, size):
+  t.color(color)
+  for i in range(2):
+    t.circle(size, 90)
+    t.circle(size/2, 90)
+
+
+  
+# colors = ['blue', 'red', 'yellow']
+
+def spiral(num, size):
+  for i in range(num):
+    oval('blue', size)
+    t.left(360/num)
+
+spiral(10, 80)
+    
+
+# square
+# arrow
+# circle
+# turtle
+# triangle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input()
